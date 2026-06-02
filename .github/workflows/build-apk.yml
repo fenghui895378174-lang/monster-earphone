@@ -31,10 +31,10 @@ jobs:
         run: flutter --version
 
       - name: Install dependencies
-        run: flutter pub get --no-version-check
+        run: flutter pub get
 
       - name: Build APK
-        run: flutter build apk --release --no-version-check
+        run: flutter build apk --release
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
