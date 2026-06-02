@@ -1,0 +1,64 @@
+name: monster_earphone
+description: 魔音耳机管理 App - 赛博科技风蓝牙耳机助手
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # 蓝牙
+  flutter_blue_plus: ^1.31.0
+  # 状态管理
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  # 本地存储
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  # 图表
+  fl_chart: ^0.66.0
+  # 动画
+  lottie: ^3.0.0
+  # 权限
+  permission_handler: ^11.3.0
+  # 音频播放(白噪音/煲机)
+  just_audio: ^0.9.37
+  # 路径
+  path_provider: ^2.1.2
+  # 分享
+  share_plus: ^7.2.1
+  # 地理位置
+  geolocator: ^10.1.0
+  # 音频会话
+  audio_session: ^0.1.18
+  # 系统信息
+  device_info_plus: ^9.1.2
+  # 振动
+  vibration: ^1.9.0
+  # 桌面小组件
+  home_widget: ^0.5.0
+  # 国际化
+  intl: ^0.18.1
+  # UI
+  google_fonts: ^6.1.0
+  shimmer: ^3.0.0
+  glassmorphism: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.3.9
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/fonts/
