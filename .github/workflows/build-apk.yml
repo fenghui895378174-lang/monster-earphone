@@ -30,6 +30,12 @@ jobs:
       - name: Verify Flutter
         run: flutter --version
 
+      - name: Fix gradle.properties
+        run: |
+          echo "org.gradle.jvmargs=-Xmx4096m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8" > android/gradle.properties
+          echo "android.useAndroidX=true" >> android/gradle.properties
+          echo "android.enableJetifier=true" >> android/gradle.properties
+
       - name: Install dependencies
         run: flutter pub get
 
