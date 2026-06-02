@@ -42,7 +42,7 @@ dependencies:
   # 桌面小组件
   home_widget: ^0.5.0
   # 国际化
- intl: '>=0.18.1 <0.20.0'
+intl: ^0.19.0
   # UI
   google_fonts: ^6.1.0
   shimmer: ^3.0.0
